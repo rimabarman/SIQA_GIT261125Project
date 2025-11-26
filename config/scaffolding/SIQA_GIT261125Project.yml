@@ -7,8 +7,108 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+- name: WmSalesforceRESTProvider
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: supported
 services:
+- serviceName: project.siqa_git261125.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:MyConn
+  packages:
+  - name: SIQA_GIT261125Project
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.197
 - serviceName: project.siqa_git261125.integrations:TestRestConnector
   packages:
   - name: SIQA_GIT261125Project
     version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.197
+- serviceName: project.siqa_git261125.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.operations.actions:TestR
+  packages:
+  - name: SIQA_GIT261125Project
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.197
+configurationVariables:
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.timeoutType
+  : auto
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.oauth_v20.authorizationServerUrl
+  : https://login.salesforce.com/services/oauth2/authorize
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.oauth.consumerSecret
+  : "{AES}ePv9vDKXdd6A2HDsPDBAO8y1Fe9R7m6Dya5xSCLlAK353vKmgg/uiZT0YAoUU42Eojf9A5EvRE+pSL3aLrpBNWmK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.sockBuffSize
+  : "8192"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.oauth_v20.refreshToken
+  : "{AES}z0OyKRGMCuSrw5+VwAKX9/oM6BIKjPeYnDaBN96E5WE51ihADTbuVPxNgEzibj4QruD7dprkqIUz2A2UuAroPCo9lkD9cn9+IyICeILx3/1l3xiIkjokSOR4joVg6CJF"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.providerUrl
+  : https://sag53-dev-ed.develop.my.salesforce.com
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.startupRetryCount
+  : "0"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.oauth_v20.authorizationHeaderInTokenRefresh
+  : "false"
+  ? iscloudstreamsconnectorservice.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:TestR.connectionAlias
+  : project.siqa_git261125.WmSalesforceRESTProvider.com_softwareag_cloudstreams_salesforce_rest_v60.connections:MyConn
+  ? iscloudstreamsconnectorservice.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..operations..actions:TestR.virtualServiceName
+  : WmCloudStreams.RestVS
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.retryCount
+  : "4"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.validateAfterInactivity
+  : "1000"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.oauth_v20.accessTokenRefreshURLRequest
+  : URL Query String
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.oauth_v20.accessTokenRefreshURL
+  : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.oauth.consumerId
+  : 3MVG9k02hQhyUgQCKlnwOVc1lTfY9AqPHmUIRA6I.ZqYzln.F3Vuok.Rk6d6F00IhbOJxstGzhIJDyuJGd0ft
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.retryIfRequestSentOk
+  : "true"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.oauth_v20.refreshAccessToken
+  : "true"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.poolable
+  : "true"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cx.grant_type
+  : refresh_token
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.readTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.idleTimeout
+  : "-1"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.oauth_v20.scope
+  : offline_access api refresh_token
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.socketLinger
+  : "-1"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.oauth_v20.authorizationHeaderPrefix
+  : Bearer
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.oauth.accessToken
+  : "{AES}h1r1CmTvU65r25EqPgWKVbdr0qH9Rghr9k/p5JQYouc7DWIntKAQ51mczmcP7YVbJDBjePQWvsaWD39sDYpN5Vtos/qUdWHp1tRvt8J6MpKJPGrMzB2sabWJfz4mjgoCva/yyOf7zwJQF5DZnddkY2mK1wuN3U1rA1B0VhuZoUw="
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.oauth_v20.authenticationServerUrl
+  : https://login.salesforce.com/services/oauth2/token
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.cn.connectTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..siqa_git261125..WmSalesforceRESTProvider..com_softwareag_cloudstreams_salesforce_rest_v60..connections:MyConn.connectionEnabled
+  : "true"
