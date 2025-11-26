@@ -7,3 +7,8 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+services:
+- serviceName: project.siqa_git261125.integrations:TestRestConnector
+  packages:
+  - name: SIQA_GIT261125Project
+    version: "1.0"
